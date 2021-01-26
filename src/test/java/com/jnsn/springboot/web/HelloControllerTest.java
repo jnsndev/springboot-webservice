@@ -1,4 +1,4 @@
-package com.jnsn.springboot;
+package com.jnsn.springboot.web;
 
 import com.jnsn.springboot.web.HelloController;
 import org.junit.Test;
@@ -15,7 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 // RunWith: 스프링부트 테스트와 JUnit 사이에 연결자 역할 (SpringRunner라는 스프링 실행자를 사용)
-// WebMvcTest: web에 집중할 수 있는 스프링 테스트 어노테이션
+// WebMvcTest: web에 집중할 수 있는 스프링 테스트 어노테이션 (JPA 기능은 작동X)
 @RunWith(SpringRunner.class)
 @WebMvcTest(controllers = HelloController.class)
 public class HelloControllerTest {
