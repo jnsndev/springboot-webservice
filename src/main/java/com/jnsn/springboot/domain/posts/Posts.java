@@ -1,5 +1,6 @@
 package com.jnsn.springboot.domain.posts;
 
+import com.jnsn.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +13,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
     // Posts 클래스는 실제 DB의 테이블과 매칭될 클래스이며 보통 Entity 클래스라고 한다.
     // JPA를 사용하면 DB 작업을 할 경우, 실제 쿼리를 날리기보다 Entity 클래스의 수정을 통해 작업한다.
     
