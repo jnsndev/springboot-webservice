@@ -21,11 +21,11 @@
             </tr>
             </thead>
             <tbody id="tbody">
-            <!-- posts라는 리스트를 순회 -->
+            <!-- posts 리스트를 순회 -->
             {{#posts}}
                 <tr>
                     <td>{{id}}</td>
-                    <td>{{title}}</td>
+                    <td><a href="/posts/update/{{id}}">{{title}}</a></td>
                     <td>{{author}}</td>
                     <td>{{modifiedDate}}</td>
                 </tr>
