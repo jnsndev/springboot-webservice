@@ -7,6 +7,13 @@
                 <a href="/posts/save" role="button" class="btn btn-primary">
                     글 등록
                 </a>
+                {{#nameOfUser}}
+                    Logged in as: <span id="user">{{nameOfUser}}</span>
+                    <a href="/logout" class="btn btn-info active" role="button">Logout</a>
+                {{/nameOfUser}}
+                {{^nameOfUser}}
+                    <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+                {{/nameOfUser}}
             </div>
         </div>
         <br>
