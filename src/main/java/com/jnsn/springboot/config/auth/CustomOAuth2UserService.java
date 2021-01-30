@@ -17,6 +17,8 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpSession;
 import java.util.Collections;
 
+// 소셜 로그인 성공 시, 후속 조치를 진행할 UserService 인터페이스의 구현체
+// 리소스 서버(소셜 서비스들)에서 사용자 정보를 가져오고 추가로 진행하고자 하는 기능을 명시할 수 있다.
 @RequiredArgsConstructor
 @Service
 public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
