@@ -16,7 +16,7 @@ script: "./gradlew clean build"
 
 # before_deploy: deploy 명령어가 실행되기 전에 수행, CodeDeploy는 jar 파일을 인식하지 못하므로 jar + 기타 설정 파일들을 모아 압축(zip)
 before_deploy:
-  - zip -r webservice
+  - zip -r webservice *
   - mkdir -p deploy
   - mv webservice.zip deploy/webservice.zip
 
